@@ -1,0 +1,65 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  background-image: url("img/utyu2.jpg");
+}
+
+h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  background: rgba(238, 238, 238, 0.7);
+  bac
+  padding: 16px;
+}
+
+header h1 span {
+  font-size: 48px;
+  color: blue;
+}
+
+header h1 span:nth-child(3) {
+  font-size: 48px;
+  color: red;
+}
+
+main {
+  padding: 32px 32px;
+}
+
+.sentense {
+  border:1px solid #eee;
+  border-radius: 8px 88px 8px 8px;
+  padding: 32px 16px;
+  background-color: #fdf1f1;
+}
+
+.eigo {
+  font-size: 32px;
+}
+
+
+.eigo > div {
+  /* outline: 1px solid red; */
+  display: inline-block;
+}
+
+
+.hurigana div:nth-child(1) {
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+
+.nihongo {
+  margin-top: 16px;
+}
+
+audio {
+  margin-top: 16px;
+}
