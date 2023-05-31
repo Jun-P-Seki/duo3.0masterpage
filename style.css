@@ -13,7 +13,6 @@ h1, h2, h3, p {
 header {
   text-align: center;
   background: rgba(238, 238, 238, 0.7);
-  bac
   padding: 16px;
 }
 
@@ -29,6 +28,7 @@ header h1 span:nth-child(3) {
 
 main {
   padding: 32px 32px;
+  position: relative;
 }
 
 .sentense {
@@ -42,6 +42,9 @@ main {
   font-size: 32px;
 }
 
+.eigo:hover {
+  background: black;
+}
 
 .eigo > div {
   /* outline: 1px solid red; */
@@ -62,4 +65,23 @@ main {
 
 audio {
   margin-top: 16px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.uchu {
+  display: block;
+  object-fit: cover;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  animation: move;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes move {
+  50%{transform: translateY(100px);}
+  100%{transform: translateY(0px);}
 }
